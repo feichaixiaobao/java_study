@@ -28,7 +28,8 @@ https://www.javadrive.jp/start/install/index4.html
 ・Git事前設定：  
 コマンドプロンプトまたはGit Bashで以下のコマンドを実行  
 git config --global user.name '自分のGitユーザー名'  
-git config --global user.email '自分のGitメールアドレス（アカウント）'  
+git config --global user.email '自分のGitメールアドレス（アカウント）' 
+※自分のGitアカウントを废柴小宝に連携して、事前登録する必要がある
 ※事前にGitのインストールが必要
 
 ・ソースコードダウンロード方法  

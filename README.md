@@ -1,11 +1,11 @@
 ・Gitの勉強に関する動画：  
 https://b23.tv/Mo32Kai
 
-・Git BashダウンロードURL：  
+・Git（コマンドメイン）ダウンロードURL：  
 https://github.com/git-for-windows/git/releases/download/v2.39.0.windows.2/Git-2.39.0.2-64-bit.exe  
 ※デフォルトでインストールすれば良い
 
-・Gitツール：  
+・TortoiseGit（GUIメイン）ダウンロードURL：  
 https://download.tortoisegit.org/tgit/2.13.0.0/TortoiseGit-2.13.0.1-64bit.msi  
 ※デフォルトでインストールすれば良い
 

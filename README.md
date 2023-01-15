@@ -53,3 +53,4 @@ jp.feichaixiaobao.user.xiaobaoを参考
 例：git commit -m 'Add xiaobao sample.'  
 ④git push --set-upstream origin 自分ブランチ名でリモートリポジトリに反映。  
 例：git push --set-upstream origin xiaobao  
+ 　 ※二回目からgit pushだけで良い

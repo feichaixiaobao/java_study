@@ -47,12 +47,16 @@ jp.feichaixiaobao.user.xiaobaoを参考
 ５）タスクのソースを作成  
 
 ６）ソースコミット  
-①git statusで変更されたファイルを確認。  
+①git pullで最新ソースを取得  
+例：git pull  
+②git statusで変更されたファイルを確認。  
 例：git status  
-②git add <file>で変更されたファイルを追加。  
+③git add <file>で変更されたファイルを追加。  
 例：git add src/jp/feichaixiaobao/user/xiaobao/HelloWorld.java  
-③git commit -m 'コミットメッセージ'でソースをローカルリポジトリにコミット。  
+④git commit -m 'コミットメッセージ'でソースをローカルリポジトリにコミット。  
 例：git commit -m 'Add xiaobao sample.'  
-④git push --set-upstream origin 自分ブランチ名でリモートリポジトリに反映。  
+⑤git push --set-upstream origin 自分ブランチ名でリモートリポジトリに反映。  
 例：git push --set-upstream origin xiaobao  
- 　 ※二回目からgit pushだけで良い
+ 　 ※二回目からgit pushだけで良い  
+⑥以下のURLにて、自分がコミットしたブランチを確認  
+https://github.com/feichaixiaobao/java_study

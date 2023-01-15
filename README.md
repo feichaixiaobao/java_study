@@ -42,9 +42,9 @@ git branch 自分のブランチ名
 git checkout 自分のブランチ名
 
 ４）パッケージ「jp.feichaixiaobao.user」の下に自分のパッケージを作成  
-jp.feichaixiaobao.user.xiaobaoを参考
+※jp.feichaixiaobao.user.xiaobaoを参考
 
-５）タスクのソースを作成  
+５）課題クリア
 
 ６）ソースコミット  
 ①git pullで最新ソースを取得  

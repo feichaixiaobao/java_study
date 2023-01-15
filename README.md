@@ -22,3 +22,34 @@ https://www.oracle.com/jp/java/technologies/javase/javase8-archive-downloads.htm
 
 ・JAVA環境変数設定：  
 https://www.javadrive.jp/start/install/index4.html
+
+・Git事前設定：  
+コマンドプロンプトまたはGit Bashで以下のコマンドを実行  
+git config --global user.name 'feichaixiaobao'  
+git config --global user.email 'feichaixiaobao@gmail.com'  
+※事前にGitのインストールが必要
+
+・ソースコードダウンロード方法  
+１）ローカルで任意のフォルダに以下のコマンドを実行  
+git clone https://github.com/feichaixiaobao/java_study.git
+
+２）自分のブランチを作成  
+git branch 自分のブランチ名
+
+３）自分のブランチに切り替え  
+git checkout 自分のブランチ名
+
+４）パッケージ「jp.feichaixiaobao.user」の下に自分のパッケージを作成  
+jp.feichaixiaobao.user.xiaobaoを参考
+
+５）タスクのソースを作成  
+
+６）ソースコミット  
+①git statusで変更されたファイルを確認。  
+例：git status  
+②git add <file>で変更されたファイルを追加。  
+例：git add src/jp/feichaixiaobao/user/xiaobao/HelloWorld.java  
+③git commit -m 'コミットメッセージ'でソースをローカルリポジトリにコミット。  
+例：git commit -m 'Add xiaobao sample.'  
+④git push --set-upstream origin 自分ブランチ名でリモートリポジトリに反映。  
+例：git push --set-upstream origin xiaobao  

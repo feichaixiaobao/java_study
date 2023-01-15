@@ -16,7 +16,7 @@ https://dev.classmethod.jp/articles/git_command_for_beginner/
 https://ftp.jaist.ac.jp/pub/mergedoc/pleiades/2022/pleiades-2022-12-java-win-64bit-jre_20221215.exe
 
 ・JDK1.8  
-https://drive.google.com/file/d/1_LWsfatCQdvpICFQhHGnrnlja6Y-X9Gz/view?usp=share_link
+https://drive.google.com/file/d/1_LWsfatCQdvpICFQhHGnrnlja6Y-X9Gz/view?usp=share_link  
 or  
 https://www.oracle.com/jp/java/technologies/javase/javase8-archive-downloads.html
 

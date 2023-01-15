@@ -36,22 +36,25 @@ git config --global user.email '自分のGitメールアドレス（アカウン
 １）ローカルで任意のフォルダに以下のコマンドを実行  
 git clone https://github.com/feichaixiaobao/java_study.git
 
-２）自分のブランチを作成  
+２）以下のコマンドでプロジェクトフォルダに移動  
+cd java_study
+
+３）自分のブランチを作成  
 git branch 自分のブランチ名
 
-３）自分のブランチに切り替え  
+４）自分のブランチに切り替え  
 git checkout 自分のブランチ名
 
-４）パッケージ「jp.feichaixiaobao.user」の下に自分のパッケージを作成  
+５）パッケージ「jp.feichaixiaobao.user」の下に自分のパッケージを作成  
 ※jp.feichaixiaobao.user.xiaobaoを参考
 
-５）課題クリア  
+６）課題クリア  
 ※JAVA基礎知識課題→「練習問題集.txt」を参考  
 ※JAVAファイル名は以下のように定義  
 sample課題名.java  
 例：sample1-1.java  
 
-６）ソースコミット  
+７）ソースコミット  
 ①git pullで最新ソースを取得  
 例：git pull  
 ②git statusで変更されたファイルを確認。  

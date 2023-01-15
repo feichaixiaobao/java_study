@@ -44,11 +44,11 @@ git checkout 自分のブランチ名
 ４）パッケージ「jp.feichaixiaobao.user」の下に自分のパッケージを作成  
 ※jp.feichaixiaobao.user.xiaobaoを参考
 
-５）課題クリア
-※JAVA基礎知識課題→「練習問題集.txt」を参考
-※JAVAファイル名は以下のように定義
-sample課題名.java
-例：sample1-1.java
+５）課題クリア  
+※JAVA基礎知識課題→「練習問題集.txt」を参考  
+※JAVAファイル名は以下のように定義  
+sample課題名.java  
+例：sample1-1.java  
 
 ６）ソースコミット  
 ①git pullで最新ソースを取得  

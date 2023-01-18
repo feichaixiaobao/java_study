@@ -10,9 +10,9 @@ public class sample1_10 {
         Scanner sc=new Scanner(System.in);
         System.out.println("ｘの値を入力してください。");
         int x=sc.nextInt();
-        System.out.println("xを一乗は"+x);
-        System.out.println("xを二乗は"+x*x);
-        System.out.println("xを三乗は"+x*x*x);
+        System.out.println("xを一乗は" + x);
+        System.out.println("xを二乗は" + x * x);
+        System.out.println("xを三乗は" + x * x * x);
 
     }
 

@@ -7,10 +7,10 @@ package jp.feichaixiaobao.user.li;
 public class sample1_9 {
     public static void main(String[] args) {
 
-        int x=1;
-        System.out.println("2x="+2*x);
-        System.out.println("3x="+3*x);
-        System.out.println("3x="+3*x);
+        int x = 1;
+        System.out.println("2x=" + 2 * x);
+        System.out.println("3x=" + 3 * x);
+        System.out.println("3x=" + 3 * x);
     }
 
 

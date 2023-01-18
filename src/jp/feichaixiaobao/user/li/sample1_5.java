@@ -7,7 +7,7 @@ package jp.feichaixiaobao.user.li;
 
 public class sample1_5 {
     public static void main(String[] args) {
-        System.out.println("13*17="+13*17);
+        System.out.println("13 * 17="+13 * 17);
     }
 
 }

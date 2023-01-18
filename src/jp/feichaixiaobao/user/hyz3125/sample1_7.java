@@ -5,6 +5,7 @@ public class sample1_7 {
     int x = (int) (Math.random() * (352324 + 1));
     int y = (int) (Math.random() * (352324 + 1));
     System.out.println("x=" + y);
-    System.out.println("y=" + x);    
+    System.out.println("y=" + x);   
+        // インデントを入れたほうがわかりやすい。 by. 小宝
     }
 }

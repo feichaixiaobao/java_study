@@ -8,7 +8,7 @@ import java.util.Scanner;
 
 public class sample1_11 {
     public static void main(String[] args) {
-        Scanner sc=new Scanner(System.in);
+        Scanner sc= new Scanner(System.in);
         System.out.println("ｘの値を入力してください。");
         int x=sc.nextInt();
         for(int i = x-1;i>0;i--){

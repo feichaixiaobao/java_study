@@ -12,6 +12,7 @@ public class sample2_4 {
         int x = sc.nextInt();
         System.out.println("yの値を入力してください：");
         Scanner sc2 = new Scanner(System.in);
+        // 「Scanner sc2 = new Scanner(System.in);」この行は不要。 by.小宝
         int y = sc.nextInt();
 
         System.out.println("x と y の和:" + (x + y) );

@@ -12,9 +12,9 @@ package jp.feichaixiaobao.user.li;
 
 public class sample1_6 {
     public static void main(String[] args) {
-        int x=7;
-        System.out.println("変数 x の値を 3 倍にする,x="+3*x);
-        System.out.println("変数 x の値を半分（1/2）にする,x="+x/2);
+        int x = 7;
+        System.out.println("変数 x の値を 3 倍にする,x=" + 3 * x);
+        System.out.println("変数 x の値を半分（1/2）にする,x="+ x / 2);
     }
 
 

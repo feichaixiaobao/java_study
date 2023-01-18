@@ -1,4 +1,4 @@
-package cn.yuuya.user;
+package jp.feichaixiaobao.user.yuuya;
 
 public class HelloWorld {
 	public static void main(String[] args) {

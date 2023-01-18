@@ -6,12 +6,12 @@ package jp.feichaixiaobao.user.li;
 
 public class sample1_7 {
     public static void main(String[] args) {
-        int x=1;
-        int y=0;
-        int res=x;
-        x=y;
-        y=res;
-        System.out.println("x="+x+",y="+y);
+        int x = 1;
+        int y = 0;
+        int res = x;
+        x = y;
+        y = res;
+        System.out.println("x="+ x +",y="+ y);
 
     }
 

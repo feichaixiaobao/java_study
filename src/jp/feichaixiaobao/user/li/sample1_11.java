@@ -11,8 +11,8 @@ public class sample1_11 {
         Scanner sc=new Scanner(System.in);
         System.out.println("ｘの値を入力してください。");
         int x=sc.nextInt();
-        for(int i=x-1;i>0;i--){
-            System.out.println("xを"+i+"で割った商="+x/i+",余り="+x%i);
+        for(int i = x-1;i>0;i--){
+            System.out.println("xを"+i+"で割った商=" + x / i+",余り=" + x % i);
         }
 
     }

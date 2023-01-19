@@ -1,4 +1,4 @@
-package jp.feichaixiaobao.user.ethanlmx;
+package jp.ethanlmx.user;
 
 public class sample1_7 {
 	public static void main(String[] args) {

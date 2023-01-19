@@ -4,7 +4,6 @@ package jp.feichaixiaobao.user.li;
 //int 型の変数 x に任意の数値を代入し、x を 1 乗、2 乗、3 乗した結果を表示するプログラムを作成しなさい。
 
 import java.util.Scanner;
-
 public class sample1_10 {
     public static void main(String[] args) {
         Scanner sc= new Scanner(System.in);
@@ -13,8 +12,5 @@ public class sample1_10 {
         System.out.println("xを一乗は" + x);
         System.out.println("xを二乗は" + x * x);
         System.out.println("xを三乗は" + x * x * x);
-
     }
-
-
 }

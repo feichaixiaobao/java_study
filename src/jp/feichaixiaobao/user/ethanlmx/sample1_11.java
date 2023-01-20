@@ -1,8 +1,8 @@
 package jp.feichaixiaobao.user.ethanlmx;
 
-public class sample1_10 {
+public class sample1_11 {
 	public static void main(String[] args) {
-		int x = 1000;
-		System.out.println(x%9);
+		int x = 11;
+		System.out.printf("x=%d", x);
 	}
 }

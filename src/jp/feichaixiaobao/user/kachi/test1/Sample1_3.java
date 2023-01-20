@@ -1,4 +1,4 @@
-package jp.feichaixiaobao.user.kachi;
+package jp.feichaixiaobao.user.kachi.test1;
 
 public class Sample1_3 {
 	public static void main(String[] args) {

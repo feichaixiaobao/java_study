@@ -12,11 +12,11 @@ public class sample3_3 {
 		System.out.println("please input y");
 		y = sc.nextInt();
 		if (x > y) {
-			System.out.print("“xはyより大きい。");
+			System.out.print("xはyより大きい。");
 		} else if (x < y) {
-			System.out.print("“xはyより小さい。");
+			System.out.print("xはyより小さい。");
 		} else {
-			System.out.print("“xとyが同じ");
+			System.out.print("xとyは等しい");
 		}
 
 	}

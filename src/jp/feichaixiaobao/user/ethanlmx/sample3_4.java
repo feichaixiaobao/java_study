@@ -2,7 +2,7 @@ package jp.feichaixiaobao.user.ethanlmx;
 
 import java.util.Scanner;
 
-public class sample3_2 {
+public class sample3_4 {
 	public static void main(String[] args) {
 		Scanner sc = new Scanner(System.in);
 		int x;
@@ -12,9 +12,9 @@ public class sample3_2 {
 		System.out.println("please input y");
 		y = sc.nextInt();
 		if (x > y) {
-			System.out.println(x);
+			System.out.print("xはyより大きい。");
 		} else if (x < y) {
-			System.out.println(y);
+			System.out.print("xはyより小さい。");
 		} else {
 			System.out.print("xとyは等しい");
 		}

@@ -11,6 +11,7 @@ public class java1_2 {
 		int a = 11;
 			System.out.print("x=");
 			System.out.print(a);
+
 	}
 
 }

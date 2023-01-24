@@ -16,9 +16,9 @@ import java.io.IOException;
 import java.io.InputStreamReader;
 
 public class sample2_1 {
-    public static void main(String[] args) {
+    public static void main(String[] args) throws IOException {
         BufferedReader bufferStr = new BufferedReader(new InputStreamReader(System.in));
-        String s = bufferStr.readline();
+        String s = bufferStr.readLine();
         System.out.println(s);
     }
 }

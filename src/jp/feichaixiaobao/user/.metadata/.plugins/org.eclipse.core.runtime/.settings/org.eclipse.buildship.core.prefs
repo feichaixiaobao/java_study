@@ -1,0 +1,5 @@
+eclipse.preferences.version=1
+arguments=-Dorg.gradle.warning.mode\=all
+auto.sync=true
+### Mac はビルドスクリプトでパス書き換え (2022-06 で toolingapi が 7.4 で 17 対応になったためコメントアウト)
+# java.home=C:/pleiades/2022-12/java/11

@@ -1,0 +1,28 @@
+<Context>
+
+	<!--
+	================================================================================== 
+	JNDI DB 接続プール設定 (Tomcat DBCP)
+	==================================================================================
+	 
+	AutoTransactionFilter.java と shiro.ini から、この定義を参照
+	起動時に AutoTransactionFilter で create_table.sql を読み込んでインメモリ DB H2 にテーブル作成
+	web.xml の JNDI 参照定義 <resource-ref> は定義不要
+	
+	設定デフォルト値 (maxWaitMillis のデフォルトは -1 で無制限のため通常は設定が必要)
+	https://tomcat.apache.org/tomcat-9.0-doc/jndi-resources-howto.html#JDBC_Data_Sources
+	
+	本番などのデプロイ実行時は $CATALINA_BASE/conf の設定を優先できる
+	https://tomcat.apache.org/tomcat-9.0-doc/config/context.html#Defining_a_context
+	-->
+	<Resource 
+		name="jdbc/main"
+		auth="Container"
+		type="javax.sql.DataSource"
+		driverClassName="org.h2.Driver"
+		url="jdbc:h2:mem:test;DB_CLOSE_DELAY=-1"
+		username="sa"
+		password=""
+		maxWaitMillis="10000" />
+
+</Context>

@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<section name="Workbench">
+	<section name="AvailableIUsPage">
+		<item key="HideInstalledContent" value="false"/>
+		<item key="FilterOnEnv" value="true"/>
+	</section>
+</section>

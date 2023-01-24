@@ -1,0 +1,11 @@
+plugins {
+	id 'war'
+}
+
+sourceCompatibility = 17
+tasks.withType(JavaCompile) {options.encoding = 'UTF-8'}
+repositories.mavenCentral()
+
+dependencies {
+	compileOnly 'jakarta.servlet:jakarta.servlet-api:4.0.+'
+}

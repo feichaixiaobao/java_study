@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta name="viewport" content="width=device-width">
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5/dist/css/bootstrap.min.css">
+<title>React の場合</title>
+</head>
+<body class="bg-dark bg-gradient text-light vh-100">
+<!-- ========== ヘッダー ========== -->
+<nav class="navbar navbar-expand-lg navbar-dark bg-dark mb-1">
+	<div class="container">
+		<a class="navbar-brand" href="..">CRUD サンプル</a>
+		<button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent">
+			<span class="navbar-toggler-icon"></span>
+		</button>
+		<div class="collapse navbar-collapse" id="navbarSupportedContent">
+			<ul class="navbar-nav me-auto mb-2 mb-lg-0">
+				<li class="nav-item"><a class="nav-link" href="#" id="id_head_link_jsp">JSP</a></li>
+				<li class="nav-item"><a class="nav-link active" href="#" id="id_head_link_react">React</a></li>
+				<li class="nav-item"><a class="nav-link" href="#" id="id_head_link_vue">Vue</a></li>
+			</ul>
+			<div class="navbar-text d-flex">
+				<span class="me-3" id="id_user_name"></span>
+				<a class="nav-link active d-none" id="id_logout" href="../logout">ログアウト</a>
+			</div>
+		</div>
+	</div>
+</nav>
+<!-- ========== メイン (React Router 画面遷移部分) ========== -->
+<div class="container">
+	<div class="alert mb-0" id="id_message" style="min-height:4rem"></div>
+	<div id="id_root"><!-- コンポーネント表示部 -->
+		<div class="d-flex justify-content-center">
+			<div class="spinner-border text-secondary"></div><!-- ロード画像 (レンダー時に消去される) -->
+		</div>
+	</div>
+</div>
+<!-- ========== フッター ========== -->
+<footer class="footer fixed-bottom py-3 text-center bg-dark">
+	<div class="container">
+		<span class="text-muted">New Gradle Project Wizard (c) Pleiades MIT</span>
+	</div>
+</footer>
+</body>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5/dist/js/bootstrap.bundle.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/react@18/umd/react.development.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/react-dom@18/umd/react-dom.development.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/react-router-dom@5/umd/react-router-dom.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/axios@1/dist/axios.min.js"></script>
+<script src="../static/axios-common-interceptor.js"></script>
+
+<!-- npm を使用せず CDN で JSX を使えるように babel を組み込み、.jsx を text/babel でロード -->
+<script src="https://cdn.jsdelivr.net/npm/@babel/standalone@7/babel.min.js"></script>
+<script type="text/babel" src="ReactEdit.jsx"></script>
+<script type="text/babel" src="ReactList.jsx"></script>
+<script>
+
+
+
+
+
+
+// React を操作するための関数
+const { useState, useEffect, createContext } = React;
+const { HashRouter, Route, Link, useParams, useHistory } = ReactRouterDOM; // v5 (v6 は CDN 未対応)
+
+// ログインユーザー名取得
+(async() => {
+	id_user_name.textContent = (await axios.get('user-name')).data;
+	id_user_name.textContent && id_logout.classList.remove('d-none');
+})();
+</script>
+<!--
+React Router 定義 (ハッシュルーター使用)
+・BrowserRouter : URL が切り替わるため、サーバー側で URL マッピングが必要 (同じページを返すようにする)
+・HashRouter    : URL ハッシュで切り替えるため、サーバー側で URL マッピング不要 (だが state を渡せない)
+-->
+<script type="text/babel">
+const App = () => {
+	return (
+		<HashRouter>
+			<Route path="/" exact   component={ReactList} />
+			<Route path="/edit/:id" component={ReactEdit} />
+		</HashRouter>
+	);
+};
+
+
+ReactDOM.createRoot(id_root).render(<App />); // React 18 以降は createRoot 推奨
+</script>
+</html>

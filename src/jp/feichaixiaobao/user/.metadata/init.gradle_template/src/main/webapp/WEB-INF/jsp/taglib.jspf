@@ -1,0 +1,11 @@
+<%-- ==========================================================================
+JSP HTML 共通ヘッダー (web.xml で設定)
+========================================================================== --%>
+
+<%-- 標準 JSTL タグ --%>
+<%@ taglib prefix="c" uri="http://java.sun.com/jsp/jstl/core"%>
+<%@ taglib prefix="fn" uri="http://java.sun.com/jsp/jstl/functions"%>
+
+<%--アプリ共通ページ属性 --%>
+<c:set var="request" value="${pageContext.request}"/>
+<c:set var="ctx" value="${request.contextPath}"/>

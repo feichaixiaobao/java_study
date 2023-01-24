@@ -1,0 +1,11 @@
+EXIT_PROMPT_ON_CLOSE_LAST_WINDOW=false
+IDE_ENCODINGS_PREFERENCE=MS932'EUC-JP
+PROBLEMS_FILTERS_MIGRATE=true
+SHOW_LOCATION=true
+SWITCH_PERSPECTIVE_ON_PROJECT_CREATION=never
+WORKSPACE_NAME=
+eclipse.preferences.version=1
+org.eclipse.ui.internal.views.markers.CachedMarkerBuilderorg.eclipse.ui.views.AllMarkersView=<?xml version\="1.0" encoding\="UTF-8"?>\r\n<filterGroups andFilters\="false" markerLimit\="100" markerLimitEnabled\="true">\r\n<filterGroup IMemento.internal.id\="USER1622682146355" enabled\="true" filterLimit\="0" name\="\u9078\u629E\u30D7\u30ED\u30B8\u30A7\u30AF\u30C8" scope\="3" workingSet\="Aggregate for window 1622529201435">\r\n<fieldFilter FILTER_ON_SEVERITY\="false" IMemento.internal.id\="org.eclipse.ui.ide.allSeverityField" containsModifier\="CONTAINS" containsText\="" selectedSeverities\="7"/>\r\n<fieldFilter IMemento.internal.id\="org.eclipse.ui.ide.markerType"/>\r\n</filterGroup>\r\n</filterGroups>
+platformState=1674220330657
+quickStart=false
+tipsAndTricks=true

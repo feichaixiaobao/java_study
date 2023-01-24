@@ -1,0 +1,93 @@
+/*
+---------------------------------------------------------------------------------------------------
+CRUD プロジェクト JSP React Vue サンプルビルド定義 - Java 17 / Tomcat 10 (jakarta.servlet)
+---------------------------------------------------------------------------------------------------
+
+ReactとVueの比較 | 完全に同じアプリのコードの書き方の違い
+https://qiita.com/cypher256/items/8d6c25e3466e4815b3c7
+	
+---------------------------------------------------------------------------------------------------
+
+Eclipse gradle プロジェクト作成ウィザードの雛形
+
+	下記のディレクトリを入れ替えることで、雛形を変更できます。
+	ワークスペース作成前	.metadata.default/init.gradle_template
+	ワークスペース作成後	workspace/.metadata/init.gradle_template
+
+プロジェクト概要
+
+	このプロジェクトは Spring などのフレームワークを使用せずに構成された Servlet サンプルプロジェクトです。
+	同じ機能 (DB 検索、登録・修正・削除) を React、Vue、JSP の 3 種類で同一プロジェクト内に実装しています。
+	
+	サーバーサイド
+	
+		SPA	用	src/main/java/jp/example/servlet/SpaCrudServlet.java (React、Vue 共通 - フロント技術非依存)
+		JSP	用	src/main/java/jp/example/servlet/JspCrudServlet.java
+
+	フロントエンド
+		
+		React	src/main/webapp/spa/React* (.html と .jsx)
+		Vue		src/main/webapp/spa/Vue* (.html と .vue)
+		JSP		src/main/webapp/WEB-INF/jsp/item/* (.jsp - サーバー側だけど)
+
+実行方法
+	
+	Eclipse > プロジェクト右クリック > デバッグ > サーバーでデバッグ
+		(実行ではなくデバッグ実行することで、再起動なしで Java コードの変更が反映される)
+		> サーバー > ツリーの localhost 開く > Tomcat10_Java17
+		> このプロジェクトを実行するときは常にこのサーバーを使用 ON
+		> 完了
+
+war ファイル作成
+	
+	Eclipse > Gradle タスク・ビュー > プロジェクト名 > build > war ダブル・クリック
+	出力先: プロジェクト配下の build/libs
+
+構成要素
+
+	DB 接続プール	JNDI Tomcat		src/main/webapp/META-INF/context.xml
+	DB アクセス		uroboroSQL		src/main/java/jp/example/filter/AutoTransactionFilter.java
+	ログ管理		SLF4J			src/main/resources/simplelogger.properties
+	セキュリティ	CSRF, CORS,,,	src/main/webapp/WEB-INF/web.xml
+	
+---------------------------------------------------------------------------------------------------
+*/
+plugins {
+	id 'war'
+}
+
+repositories.mavenCentral()
+sourceCompatibility = 17
+tasks.withType(JavaCompile) {options.encoding = 'UTF-8'}
+
+dependencies {
+	
+	// Tomcat 9 (javax)
+	//compileOnly 'jakarta.servlet:jakarta.servlet-api:4.0.+'
+	//compileOnly 'jakarta.servlet.jsp:jakarta.servlet.jsp-api:2.3.+'
+	//runtimeOnly 'jakarta.servlet.jsp.jstl:jakarta.servlet.jsp.jstl-api:1.2.+'
+	//runtimeOnly 'org.apache.taglibs:taglibs-standard-impl:1.2.+'
+	
+	// Tomcat 10.0 (jakarta)
+	//compileOnly 'jakarta.servlet:jakarta.servlet-api:5.0.+'
+	//compileOnly 'jakarta.servlet.jsp:jakarta.servlet.jsp-api:3.0.+'
+	//runtimeOnly 'jakarta.servlet.jsp.jstl:jakarta.servlet.jsp.jstl-api:2.0.+'
+	//runtimeOnly 'org.glassfish.web:jakarta.servlet.jsp.jstl:2.0.+'
+	
+	// Tomcat 10.1 (jakarta)
+	compileOnly 'jakarta.servlet:jakarta.servlet-api:6.0.+'
+	compileOnly 'jakarta.servlet.jsp:jakarta.servlet.jsp-api:3.1.+'
+	runtimeOnly 'jakarta.servlet.jsp.jstl:jakarta.servlet.jsp.jstl-api:3.0.+'
+	runtimeOnly 'org.glassfish.web:jakarta.servlet.jsp.jstl:3.0.+'
+
+	implementation 'com.fasterxml.jackson.core:jackson-databind:2.13.+' // JSON 変換
+	implementation 'commons-beanutils:commons-beanutils:1.9.+' // Bean 変換
+	implementation 'de.mkammerer:argon2-jvm:2.+' // パスワードハッシュ化
+	implementation 'org.apache.commons:commons-lang3:3.12.+' // 共通ユーティリティ
+	implementation 'jp.co.future:uroborosql:0.25.+' // SQL 実行ライブラリ
+	compileOnly 'org.projectlombok:lombok:1.18.+' // アクセッサ自動生成
+	annotationProcessor 'org.projectlombok:lombok:1.18.+'
+	runtimeOnly 'com.h2database:h2:2.1.+' // インメモリデータベース
+	runtimeOnly 'org.slf4j:slf4j-simple:1.7.+' // ロガー
+	runtimeOnly 'ognl:ognl:3.3.+' // 2 Way-SQL の条件式評価
+}

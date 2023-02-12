@@ -14,5 +14,11 @@ public class chardetail {
 
         char c6 = 'a';
         System.out.println((int)c6);
+
+        System.out.println('a' + 100);
+
+        char c7 = 'b' +1;
+        System.out.println((int)c5);
+        System.out.println(c5);
     }
 }

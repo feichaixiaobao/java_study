@@ -1,4 +1,7 @@
 public class chardetail {
+    /**
+     * @param args
+     */
     public static void main(String[] args) {
         char c1 = 'a';
         char c2 = '\t';

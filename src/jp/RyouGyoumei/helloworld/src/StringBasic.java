@@ -19,6 +19,17 @@ public class StringBasic {
         byte num5 = Byte.parseByte(s5);
         boolean b = Boolean.parseBoolean(s5);
         short num6 = Short.parseShort(s5);
-        
+
+        System.out.println("==============");
+        System.out.println(num1);
+        System.out.println(num2);
+        System.out.println(num3);
+        System.out.println(num4);
+        System.out.println(num5);
+        System.out.println(b);
+        System.out.println(num6);
+
+        System.out.println(s5.charAt(0));
+
     }
 }

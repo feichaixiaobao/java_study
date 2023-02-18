@@ -9,5 +9,7 @@ public class TernaryOperatorDetail {
         int b = 8;
         int c = a > b ? (int)1.1 : (int)3.4;
         System.out.println("c=" + c);
+
+        //三元运算符的本质是if--else
     }
 }

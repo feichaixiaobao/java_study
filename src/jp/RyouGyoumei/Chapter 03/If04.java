@@ -8,5 +8,14 @@ public class If04 {
         } else {
             System.out.println("N");
         }
+
+        int num1 = 10;
+        int num2 = 20;
+
+        if (num1 % 3 == 0 && num2 % 5 == 0) {
+            System.out.println("Y");
+        } else {
+            System.out.println("N");
+        }
     }
 }

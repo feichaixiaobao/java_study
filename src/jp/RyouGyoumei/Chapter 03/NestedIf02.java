@@ -18,7 +18,7 @@ public class NestedIf02 {
             }
         } else {
             if ( 17 < age && age < 61){
-                System.out.println("票价：60");
+                System.out.println("票价：40");
             }
             else {
                 System.out.println("票价：20");

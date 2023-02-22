@@ -29,6 +29,7 @@ public class Swithch01 {
             System.out.println("Sunday");
             break;
         }
+        System.out.println("game over");
 
     }
 }

@@ -1,4 +1,4 @@
-import java.util.Scanner;;
+import java.util.Scanner;
 public class NestedIf02 {
     public static void main(String[] args) {
         Scanner myScanner = new Scanner(System.in);

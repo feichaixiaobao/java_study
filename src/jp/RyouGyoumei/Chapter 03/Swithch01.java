@@ -5,7 +5,7 @@ public class Swithch01 {
         System.out.println("请输入一个字符（a-g）");
         String input = myScanner.next();
         if (input.length() != 1 || input.charAt(0) < 'a' || input.charAt(0) > 'g') {
-            System.out.println("非法输入");
+            System.out.println("Type again!");
             return;
         }
         char c1 = input.charAt(0);
@@ -34,8 +34,8 @@ public class Swithch01 {
                 break;
 
             default:
-                System.out.println("Erro!type again!");
-                break;
+                System.out.println("Error!type again!");
+                return;
         }
         System.out.println("game over");
     }

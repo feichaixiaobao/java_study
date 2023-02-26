@@ -1,7 +1,7 @@
 public class ForExersice02 {
     public static void main(String[] args) {
         int start = 0;
-        int end = 5;
+        int end = 100;
         int i = start;
         int j = end;
         int sum = 0;

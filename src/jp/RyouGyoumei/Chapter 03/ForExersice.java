@@ -12,11 +12,15 @@ public class ForExersice {
         //2)    在输出的过程中，进行过滤，只输出9的倍数的整数
         //3)    统计个数，定义一个变量 int count = 0;当条件满足时，count++；
         //4)    总和，定义一个变量 int sum = 0; 当条件满足时， sum += i;
+        //先死后活
+        //1)    为了适应更好的需求，把范围的开始和值和结束的值，做出变量
 
         int count = 0;
         int sum = 0;
+        int start = 1;
+        int end = 100;
 
-        for (int i = 1; i <= 100; i++) {
+        for (int i = start; i <= end; i++) {
             if (i%9 == 0) {
                 count++;
                 sum += i;

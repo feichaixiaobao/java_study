@@ -10,6 +10,6 @@ public class BreakExercise {
                 break;
             }
         }
-        System.out.println("当前数=" + n);
+        System.out.println("Current Number=" + n);
     }
 }

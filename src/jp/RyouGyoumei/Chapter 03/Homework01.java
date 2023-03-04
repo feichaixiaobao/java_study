@@ -25,7 +25,7 @@
 
 import java.util.Scanner;
 
-public class CheckInteger {
+public class Homework01 {
     public static void main(String[] args) {
         Scanner scanner = new Scanner(System.in);
         boolean playAgain = true;

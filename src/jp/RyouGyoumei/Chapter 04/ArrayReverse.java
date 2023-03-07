@@ -14,5 +14,10 @@ public class ArrayReverse {
             arr[len - 1 -i] = arr[i];
             arr[i] = temp;
         }
+
+        System.out.println("======翻转后的数组======");
+        for (int i = 0; i < arr.length; i++) {
+            System.out.println(arr[i] + "\t");
+        }
     }
 }

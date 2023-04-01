@@ -8,9 +8,9 @@ public class This01 {
 class Dog{
     String name;
     int age;
-    public Dog(String dName, int dAge){
-        name = dName;
-        age = dAge;
+    public Dog(String name, int age){
+        this.name = name;
+        this.age = age;
     }
 
     public void info() {
